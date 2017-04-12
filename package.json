@@ -1,0 +1,23 @@
+{
+  "name": "spandx",
+  "version": "1.0.0",
+  "description": "DECO3850 SpandX project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardlio/spandx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardlio/spandx/issues"
+  },
+  "homepage": "https://github.com/eduardlio/spandx#readme",
+  "dependencies": {
+    "git-label-packages": "^1.1.0"
+  }
+}
