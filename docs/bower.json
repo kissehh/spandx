@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Edward Liao <liao.edward@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eduardlio/spandx",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "modernizr": "^3.3.1"
+  }
+}

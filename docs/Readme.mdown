@@ -1,0 +1,2 @@
+# Homepage
+This will be our project's website. Github allows us to host a website on it so that's pretty cool. We'll get onto this later on in the project but for now, just remember that this is here
