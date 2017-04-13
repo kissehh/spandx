@@ -1,2 +1,41 @@
 # Homepage
-This will be our project's website. Github allows us to host a website on it so that's pretty cool. We'll get onto this later on in the project but for now, just remember that this is here
+This will be our project's website. Github allows us to host a website on it so that's pretty cool. We'll get onto this later on in the project but for now, just remember that this is here.
+
+## Prerequisites
+You need to have installed (in this order):
+
+- [Node.js](https://nodejs.org/en/download/)
+- [gulp.js](http://gulpjs.com/)
+
+Once you install Node.js, npm will be installed too. To install gulp, go into the command line and type: 
+
+```
+npm install gulp -g
+```
+
+Pug is a quick and clean html compiler. Sass is a super clean CSS compiler. Throw Gulp into the mix and we have a supercharged, automated and quick way to build and ship our project.
+
+## Workflow
+1. Edit the pug file(s) and the sass file(s) and SAVE
+2. Open the command line
+3. Navigate to C:/path/to/spandx/docs
+4. Type ``gulp html && gulp css``
+	* this will compile your pug and sass files to html and css
+5. (optional) In file explorer, go to spandx/docs and check out the html and css files to be sure of stuff. 
+
+## File Structure
+### docs/source
+The source folder contains pug and sass directories. __THIS IS WHERE YOU SHOULD BE MAKING YOUR CHANGES__. If you've made a shit ton of changes to the html files and someone else edits the pug file, _they will overwrite all of your changes_ with a single command. 
+
+### styles, img, js
+These are the standard files that the html will be accessing. 
+
+## Things not to worry about:
+
+- bower_components
+- node_modules
+
+These two just deal with the node and bower modules/components. Nothing much to do there.
+
+## Everything else
+If you're unsure about something here, let me know.
