@@ -22,7 +22,8 @@ public class DepthSourceView : MonoBehaviour
     private Vector3[] _Vertices;
     private Vector2[] _UV;
     private int[] _Triangles;
-    
+    private boolean testingBool;
+
     // Only works at 4 right now
     private const int _DownsampleSize = 4;
     private const double _DepthScale = 0.1f;
@@ -34,6 +35,7 @@ public class DepthSourceView : MonoBehaviour
 
     void Start()
     {
+        testingBool = false;
         _Sensor = KinectSensor.GetDefault();
         if (_Sensor != null)
         {
@@ -197,14 +199,22 @@ public class DepthSourceView : MonoBehaviour
                 
                 avg = avg * _DepthScale;
                 
+                if(indexX <=40 && indexY <= 40 && !testingBool){
+                    testingBool= true;
+                    debug.log('avg: ' + avg)
+                }
+
                 _Vertices[smallIndex].z = (float)avg;
                 
                 // Update UV mapping with CDRP
                 var colorSpacePoint = colorSpace[(y * frameDesc.Width) + x];
                 _UV[smallIndex] = new Vector2(colorSpacePoint.X / colorWidth, colorSpacePoint.Y / colorHeight);
             }
+
         }
         
+        testingBool = true;
+
         _Mesh.vertices = _Vertices;
         _Mesh.uv = _UV;
         _Mesh.triangles = _Triangles;
