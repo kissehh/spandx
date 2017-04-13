@@ -1,4 +1,8 @@
+# PSA: THE PORTFOLIO IS AN INDIVIDUAL ONE SO BASICALLY ALL OF THIS IS TOTALLY USELESS
+__To an extent__. If you want, I'm going to leave this here for your reference. If you ever decide to learn a better workflow, check this out. It'll be pretty handy. If you have any other questions about this workflow, PR me or something (I think that's how it works).
+
 # Homepage
+Actual homepage can be found [here](https://eduardlio.github.io/spandx/).
 This will be our project's website. Github allows us to host a website on it so that's pretty cool. We'll get onto this later on in the project but for now, just remember that this is here.
 
 ## Prerequisites
